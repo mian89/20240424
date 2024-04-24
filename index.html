@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>網頁組成範本</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <style>
+        *,
+        *::after,
+        *::before {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            scroll-behavior: smooth;
+        }
+
+        /*text*/
+        h1 {
+            font-size: 36px;
+            color: rgb(255, 0, 0);
+        }
+
+        h2 {
+            font-size: 28px;
+            color: #303caa;
+        }
+
+        h3 {
+            font-size: 14px;
+            margin: auto;
+            text-align: center;
+            border: 1px solid #000;
+            padding: 10px 20px 25px 10px;
+        }
+
+        .student {
+            font-size: 36px;
+            text-align: center;
+            color: rgb(255, 0, 0);
+        }
+
+        #first-student {
+            font-size: 28px;
+            color: #101280;
+        }
+
+        .text-green {
+            display: flex;
+            align-items: center;
+        }
+
+        /*paragraph*/
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 15px;
+            background: #000;
+            color: #fff;
+            height: 80px;
+            position: fixed;
+            width: 100%;
+        }
+
+        .menu ul {
+            list-style-type: none;
+            display: flex;
+            color: #fff;
+            gap: 15px;
+        }
+
+        .menu ul a {
+            color: inherit;
+            text-decoration: none;
+            transition: 0.6s;
+        }
+
+        .menu ul a:hover {
+            color: red;
+        }
+
+        .page {
+            width: 100%;
+            height: 100vh;
+            background: rgb(24, 57, 148);
+            color: yellow;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 50px;
+            font-weight: 700;
+        }
+
+        #about,
+        #contact {
+            background: red;
+        }
+
+        .logo {
+            max-width: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <a href="#"><img src="./logo.png" alt="網站圖示" class="logo"></a>
+        <div class="menu">
+            <ul>
+                <li>
+                    <a href="#">HOME</a>
+                </li>
+                <li>
+                    <a href="#about">ABOUT</a>
+                </li>
+                <li>
+                    <a href="#product">PRODUCT</a>
+                </li>
+                <li>
+                    <a href="#contant">CONTANT</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main">
+        Main
+        <div class="page">
+            <div id="first-student" class="student">
+                First Student
+            </div>
+        </div>
+        <div class="page" id="about">
+            <div>
+                <h1>第<span class="text-green">一</span>篇文章</h1>
+                <h2>第一章節</h2>
+                <h3>第一段落</h3>
+                <h2>第二章節</h2>
+                <h3>第二段落</h3>
+            </div>
+        </div>
+    </div>
+    <div class="page" id="product">PRODUCT</div>
+    <div class="page" id="contact">CONTACT</div>
+    <div class="footer">
+        Footer
+    </div>
+</body>
+
+</html>
